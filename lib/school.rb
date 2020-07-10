@@ -3,7 +3,7 @@ class School
   
   attr_accessor :name, :roster
   
-  def initailize(name)
+  def initailize (name)
     @name = name
     @roster = {}
   end
