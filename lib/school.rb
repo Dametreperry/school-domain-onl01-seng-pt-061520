@@ -13,10 +13,19 @@ class School
     roster[grade] << name 
   end
 
-def grade(grade)
+  def grade(grade)
     roster.each do |k, v| 
       if k == grade
         return v 
       end 
     end 
  end
+ 
+ def sort 
+  new_hash = {}
+  roster.each do |k, v| 
+    new_hash[k] = v.sort 
+    binding.pry
+  end 
+  new_hash
+end 
